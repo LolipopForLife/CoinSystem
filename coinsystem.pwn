@@ -10,7 +10,7 @@
 Description:  
 
 	This script has been developed now by B3x7K, and i dont care about it.
-	Well i thing thats it :)
+	Well i thing thats it
 	Enjoy :)
 	
 	Oh i'm forget, this version is most responsible for anyone who want to give their coin
