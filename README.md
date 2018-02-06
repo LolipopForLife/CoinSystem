@@ -3,13 +3,16 @@ Ini adalah Coin System yang dibuat menggunakan bahasa indonesia, tujuannya agar 
 
 ## Instalasi
 1. Download beberapa plugin seperti sscanf2, Y_ini, ZCMD, Streamer, Dan foreach
-2. Jika sudah taruh semuanya di folder plugin dan pawno/include
-3. Taruh script coinsystem di filterscripts
-4. Edit server.cfg dan ketik coinsystem di kolom filterscript, contoh: "filterscript coinsystem "
-5. Buka server nya lalu jalankan.
-6. Enjoy ;)
+2. Download Script saya di [Release](https://github.com/LolipopForLife/CoinSystem/releases)
+3. Jika sudah taruh semuanya di folder plugin dan pawno/include
+4. Taruh script coinsystem di filterscripts
+5. Edit server.cfg dan ketik coinsystem di kolom filterscript, contoh: "filterscript coinsystem "
+6. Buka server nya lalu jalankan.
+7. Enjoy ;)
 
 ## Cara penggunaan
+
+List Command:
 ```
 /kasihgembelkoin [playerid] [jumlah] [alasannya] - Untuk memberi player coin
 /kurangigembelkoin [playerid] [jumlah] [alasannya] - Untuk mengurangi player coin
