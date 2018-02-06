@@ -27,12 +27,12 @@ Contoh:
 * Y_Ini tidak ngesave di gamemode tertentu
 
 ## Credits
-B3x7K for translate it to indonesian
-corne for YSI/Y_Ini
-Y_Less, Emmet_, and maddinat0r for sscanf
-Zeex for ZCMD
-Incognito for Streamer
-Kar for Foreach
+* B3x7K for translate it to indonesian
+* corne for YSI/Y_Ini
+* Y_Less, Emmet_, and maddinat0r for sscanf
+* Zeex for ZCMD
+* Incognito for Streamer
+* Kar for Foreach
 
 ## Note
 Script ini benar benar dibuat 100% oleh saya, jadi segala bentuk hujatan yang diterima saya ga peduli, yang penting oiseng iseng buat project ini.
