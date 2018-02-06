@@ -1,16 +1,47 @@
+/*
+								   _____      _                       _                        __ 
+								  / ____|    (_)                     | |                      /_ |
+								 | |     ___  _ _ __    ___ _   _ ___| |_ ___ _ __ ___   __   _| |
+								 | |    / _ \| | '_ \  / __| | | / __| __/ _ \ '_ ` _ \  \ \ / / |
+								 | |___| (_) | | | | | \__ \ |_| \__ \ ||  __/ | | | | |  \ V /| |
+								  \_____\___/|_|_| |_| |___/\__, |___/\__\___|_| |_| |_|   \_/ |_| By:B3x7K
+											     __/ |                                
+											    |___/                                    
+Description:  
 
+	This script has been developed now by B3x7K, and i dont care about it.
+	Well i thing thats it :)
+	Enjoy :)
+	
+	Oh i'm forget, this version is most responsible for anyone who want to give their coin
+	to other people whitch you can easily use this in your gamemode
+	And i'm make this for firstime, so if you fond any bugs, please contact me or reply in comment section on samp/facebook
+	
+	Thank you for downloading my project.
+	- B3x7K
 
+	Things to consider:
+    *  Always read what i say in comment section, and if you need some suggestion
+		or if you want to ask something about this script please let me know
+		cuz any your question or suggestion it's makes me feels better :3
+		
+		Well i think thats it, enjoy :)
+	  
+	Bug List:
+	* I've been try this before, just lemme know if you found any bugs
+		and i'll try to fix it ASAP
 
+	Credits:
+	* B3x7K
 
+	Copyright(c) 2014-2018 B3x7K (All rights reserved)
+*/
 
-
-
-
-
-
+//"THIS CODE CAN BE COPYPASTED, BUT THIS CODE CAN'T WORK WITH YOUR IDEA" - B3x7K.//
 
 #define FILTERSCRIPT
 
+//Includes
 #include <a_samp>
 #include <foreach>
 #include <streamer>
@@ -18,8 +49,10 @@
 #include <YSI\y_ini>
 #include <zcmd>
 
+//User Path
 #define UserPathuuuu "/CoinSystem/%s.ini"
 
+//DONT TOUCH IF YOU DONT UNDERSTAND >:(
 #define KasihTauGembel(%0,%1) \
 	SendClientMessage(%0,-1,%1)
 
@@ -52,18 +85,24 @@
 	
 #define UmpetinTextdrawnya(%0,%1) \
 	TextDrawHideForPlayer(%0,%1)
-	
+
+//Enums
 enum GembelInfo 
 {
 	GembelKoin
 };
 
+//New's stuff
 new 
 	GembelData[MAX_PLAYERS][GembelInfo],
 	pelername[24];
-	
+
 new Text:GembelItem;
 
+//Forwards
+forward LoadUser_data(playerid,name[],value[]);
+
+// Public
 public OnFilterScriptInit()
 {
 	GembelItem = TextDrawCreate(18.725851, 327.083312, "My Coin: ~w~0");
@@ -134,13 +173,13 @@ public OnPlayerUpdate(playerid)
     return 1;
 }
 
-forward LoadUser_data(playerid,name[],value[]);
 public LoadUser_data(playerid,name[],value[]) 
 {
     INI_Int("CoinSystem", GembelData[playerid][GembelKoin]); // Get user ini data.
     return 1;
 }
 
+//Begin Command's
 CMD:kasihgembelkoin(playerid, params[])
 {
 	new
@@ -234,6 +273,7 @@ CMD:gotopos(playerid, params[])
 	return 1;
 }
 
+//Stocks
 stock UserPath(playerid) 
 {
     new 
